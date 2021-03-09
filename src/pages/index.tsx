@@ -6,21 +6,16 @@ import { api } from '../services/api'
 import { DevForm } from '../components/DevForm'
 import { DevItem } from '../components/DevItem'
 
-// interface Devs {
-//   id: number;
-//   avatar_url: string;
-//   name: string;
-//   techs: [string]
-//   github_username: string
-//   bio: string;
-// }
-
-// interface HomeProps {
-//   devs: [Devs]
-// }
-
-export default function Home() {
-  const [devs, setDevs] = useState([])
+interface Devs {
+  id: number;
+  avatar_url: string;
+  name: string;
+  techs: [string]
+  github_username: string
+  bio: string;
+}
+export default function Home({ foundDevs }) {
+  const [devs, setDevs] = useState(foundDevs)
 
   useEffect(() => {
     async function loadDevs() {
@@ -41,7 +36,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>DevRadar</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <aside>
@@ -51,7 +46,7 @@ export default function Home() {
 
       <main>
         <ul>
-          {devs.map(dev => (
+          {devs.map((dev: Devs) => (
             <DevItem key={dev.id} dev={dev} />
           ))}
 
@@ -61,11 +56,7 @@ export default function Home() {
   )
 }
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-
-//   return {
-//     props: {
-//       devs: response.data ?? []
-//     }
-//   }
-// }
+Home.getInitialProps = async () => {
+  const response = await api.get('/devs')
+  return { foundDevs: response.data ?? [] }
+}
