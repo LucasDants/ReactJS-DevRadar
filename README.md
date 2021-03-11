@@ -1,6 +1,6 @@
     
 <h1 align="center">:computer: DevRadar</h1>
-<p align="center">Move It was build to reminder you to exercise yourself!</p>
+<p align="center">DevRadar a way to find devs!</p>
 
 <p align="center">
  <img  src="https://img.shields.io/github/package-json/dependency-version/Luksdantas/ReactJS-DevRadar/react" alt="React Version">
