@@ -11,7 +11,7 @@
 <h1>:memo:About</h1>
 <p>DevRadar is a project developed during the <a href="https://rocketseat.com/">Semana Omnistack</a> presented by <a href="https://www.linkedin.com/school/rocketseat/">Rockeseat</a>. This project is a way to find near devs by techs.</p>
 <p>API: <a href="https://github.com/Luksdantas/NodeJS-DevRadar">DevRadar API</a></p>
-<p>API: <a href="https://github.com/Luksdantas/ReactNative-DevRadar">DevRadar Mobile</a></p>
+<p>Mobile: <a href="https://github.com/Luksdantas/ReactNative-DevRadar">DevRadar Mobile</a></p>
 
 <h1>:art:Layout</h1>
 <img  src="https://github.com/Luksdantas/ReactJS-DevRadar/blob/main/screenshots/homePage.png" alt="Home Screenshot">
