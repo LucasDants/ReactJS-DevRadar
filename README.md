@@ -15,6 +15,7 @@
 
 <h1>:art:Layout</h1>
 <img  src="https://github.com/Luksdantas/ReactJS-DevRadar/blob/main/screenshots/homePage.png" alt="Home Screenshot">
+<img  src="https://github.com/Luksdantas/ReactJS-DevRadar/blob/main/screenshots/mobile.png" alt="Mobile Home Screenshot">
 
 
 <h1>:rocket: Getting started</h1>
