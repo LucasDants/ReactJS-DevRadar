@@ -57,6 +57,8 @@ export default function Home({ foundDevs }) {
 }
 
 Home.getInitialProps = async () => {
-  const response = await api.get('/devs')
-  return { foundDevs: response.data ?? [] }
+  const response = await api.get('/devs').catch(err => {
+    return {data: []}
+  });
+  return { foundDevs: response.data }
 }
