@@ -22,10 +22,10 @@
 ```bash
 
 # Clone this repository
-$ git clone https://github.com/Luksdantas/ReactJS-MoveIt.git
+$ git clone https://github.com/Luksdantas/ReactJS-DevRadar.git
 
 # Access the project folder cmd/terminal
-$ cd ReactJS-MoveIt
+$ cd ReactJS-DevRadar
 
 # install the dependencies
 $ npm install
